@@ -1,4 +1,8 @@
 package com.kartkowka;
+
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main2 {
     public static void main(String[] args) {
 
@@ -8,10 +12,13 @@ public class Main2 {
         //4 znajdź najdłuższy ciąg rosnący w elementach  z zadania 1
 
         // ZADANIE 2
-        int tablica[]=new int[20];
-        for(int i=0;i<20;i++){
-            tablica[i] = (int) (Math.random() * 50 + 1);
-            System.out.print(tablica[i]+" ");
+        System.out.println("zadanie 2");
+         Set<Integer> tablica = new HashSet<>();
+
+        while (tablica.size() < 20) {
+            tablica.add((int) (Math.random() * 50 + 1));
+
         }
+        System.out.println(tablica);
     }
-}
+    }
